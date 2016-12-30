@@ -212,13 +212,15 @@ public class ProfilesActivity extends Activity {
 
         if (data.equals(Constants.ALERT_EVENT)) {
             String message = intent.getStringExtra(Constants.INTENT_DATA_MESSAGE);
-            new AlertDialog.Builder(this)
+           new AlertDialog.Builder(this)
                     .setTitle(getResources().getString(R.string.alert_dialog_title))
                     .setMessage(message)
                     .setPositiveButton(getResources().getString(R.string.ok), new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int whichButton) {
                         }
                     }).show();
+
+
         }
     }
 
